@@ -15,6 +15,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up Dart SDK
+      uses: dart-lang/setup-dart@v1
+      with:
+        sdk: stable # or a specific version like '3.0.0'
+
     - name: Set up Java
       uses: actions/setup-java@v2
       with:
@@ -41,3 +46,4 @@ jobs:
     - name: Build App Bundle
       run: flutter build appbundle
       working-directory: fluffychat-main
+
