@@ -4,7 +4,7 @@ publish_to: none
 version: 1.11.2+3360
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=2.0.0 <4.0.0"
 
 dependencies:
   adaptive_dialog: ^1.9.0-no-macos.2
